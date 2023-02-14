@@ -6,19 +6,24 @@
     left: 0
     z-index: -1
     position: absolute
+    background-size: cover
     background-image: url('../images/bg.png')
 
 .header-content
     width: 50%
+    .btn
+        margin-bottom: 247px
     span
         display: block
     &__title
         font-size: 48px
         font-weight: $medium
+        margin-bottom: 14px
     &__subtitle
         font-size: 20px
         font-weight: $regular
         color: #EB4896
+        margin-bottom: 27px
 
 @media  ( max-width: 768px  )
     .header::before

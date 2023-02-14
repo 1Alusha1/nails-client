@@ -1,0 +1,35 @@
+.card
+    width: 24%
+    margin-bottom: 30px
+    img
+        width: 100%
+        height: auto
+        margin-bottom: 14px
+    &-info
+        padding: 5px
+    &-title
+        font-size: 20px
+        margin-bottom: 10px
+    &-price
+        font-size: 24px
+        margin-bottom: 10px
+    &-description
+        font-size: 14px
+        color: #A5A5A5
+.cards-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+@media (max-width:768px)
+    .card
+        width: 49%
+        &-title
+            font-size: 16px
+        &-price
+            font-size: 18px
+        &-description
+            font-size: 14px
+@media (max-width:768px)
+    .card
+        width: 100%
