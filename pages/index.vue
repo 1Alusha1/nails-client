@@ -1,7 +1,8 @@
 <template>
-  <div class="container">
+  <div class="app">
     <header-app />
     <services-app />
+    <about-app />
   </div>
 </template>
 
@@ -9,9 +10,10 @@
 import Vue from 'vue'
 import Header from '~/components/HeaderApp.vue'
 import ServicesApp from '~/components/ServicesApp.vue'
+import AboutApp from '~/components/AboutApp.vue'
 
 export default Vue.extend({
-  components: { ServicesApp },
+  components: { ServicesApp, AboutApp },
   name: 'IndexPage',
 })
 Header

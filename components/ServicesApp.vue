@@ -1,18 +1,22 @@
 <template>
   <div class="services">
-    <h2 class="services__title"></h2>
-    <h3 class="services__subtitle"></h3>
-    <div class="cards-wrap">
-      <card-app v-for="item in 8" :key="item">
-        <img :src="require('../assets/images/Rectangle.png')" alt="" />
-        <div class="card-info">
-          <div class="card-title">Маникюр + Однотонное покрытиие гель-лак</div>
-          <div class="card-price">400 грн</div>
-          <div class="card-description">
-            Аппаратный/комбинированный маникюр и однотонное покрытие гель-лак
+    <div class="container">
+      <h2 class="services__title"></h2>
+      <h3 class="services__subtitle"></h3>
+      <div class="cards-wrap">
+        <card-app v-for="item in 8" :key="item">
+          <img :src="require('../assets/images/Rectangle.png')" alt="" />
+          <div class="card-info">
+            <div class="card-title">
+              Маникюр + Однотонное покрытиие гель-лак
+            </div>
+            <div class="card-price">400 грн</div>
+            <div class="card-description">
+              Аппаратный/комбинированный маникюр и однотонное покрытие гель-лак
+            </div>
           </div>
-        </div>
-      </card-app>
+        </card-app>
+      </div>
     </div>
   </div>
 </template>
